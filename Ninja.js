@@ -13,7 +13,7 @@ class Ninja {
     }
 
     showStats(){
-        console.log("Name: "+ this.name, "Strength: "+ this.strength, "Speed: "+this.speed,"Health: "+this.health)
+        console.log("Name: "+ this.name +",", "Strength: "+ this.strength +",", "Speed: "+this.speed +",","Health: "+this.health +",")
     }
 
     drinkSake(){
@@ -27,4 +27,26 @@ ninja1.drinkSake();
 ninja1.showStats();
 
 
-class 
+class Sensei extends Ninja {
+    constructor(name){
+        super("Ninja")
+        this.name = name;
+        this.health = 200;
+        this.speed = 10;
+        this.strength = 10;
+        this.wisdom = 10;
+    }
+    speakWisdom(){
+        this.drinkSake()
+        if(this.wisdom < 50){
+            console.log("The fool thinks he is wise, but the wise man knows himself to be a fool.")
+        }
+        else{
+            console.log("Whenever you find yourself on the side of the majority, it is time to pause and reflect")
+        }
+    }
+}
+
+const superSensei = new Sensei("Master Splinter");
+superSensei.showStats();
+superSensei.speakWisdom();
