@@ -41,3 +41,18 @@ play(target); {
         throw new Error( "Target must be a unit!" );
     }
 }
+
+const RedBeltNinja = new Unit ("Red Belt Ninja", 3, 3, 4);
+
+const HardAlgorithm = new Effect("Hard Algorithm", 2, "increase target's resilience by 3", "res", 3);
+HardAlgorithm.play(RedBeltNinja);
+
+const BlackBeltNinja = new Unit ("Black Belt Ninja", 4, 5, 4);
+
+const Rejection = new Effect("Unhandled Promise Rejection", 1, "reduce target's resilience by 2", "res", -2);
+Rejection.play(RedBeltNinja);
+
+const PP = new Effect("Pair Programming", 3, "increase target's power by 2", "power", 2);
+PP.play(RedBeltNinja);
+
+RedBeltNinja.attack(BlackBeltNinja);
