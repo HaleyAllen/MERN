@@ -29,7 +29,7 @@ ninja1.showStats();
 
 class Sensei extends Ninja {
     constructor(name){
-        super("Ninja")
+        super(name);
         this.name = name;
         this.health = 200;
         this.speed = 10;
