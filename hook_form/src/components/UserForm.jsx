@@ -92,7 +92,7 @@ console.log(confirmPw);
                     <label>Confirm Password: </label>
                     <input type="text" onChange={checkPasswordConfirm} />
                     { passwordConfirmError ? <p style={{color:'red'}}>{passwordConfirmError}</p> : ''}
-                    {/* { passwordMatchError ? <p style={{color:'red'}}>{passwordMatchError}</p> : ''} */}
+
                 </div>
                 <input id="btn" type="submit" value="Create User" />
             </form>
