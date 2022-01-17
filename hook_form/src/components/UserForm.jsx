@@ -94,7 +94,7 @@ console.log(confirmPw);
                     { passwordConfirmError ? <p style={{color:'red'}}>{passwordConfirmError}</p> : ''}
                     {/* { passwordMatchError ? <p style={{color:'red'}}>{passwordMatchError}</p> : ''} */}
                 </div>
-                <input type="submit" value="Create User" />
+                <input id="btn" type="submit" value="Create User" />
             </form>
             <div>
                 <h4>Form Data</h4>

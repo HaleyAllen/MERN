@@ -47,3 +47,14 @@ form{
 .input{
   margin: 10px;
 }
+
+#btn{
+  background-color: grey;
+  text-align: center;
+  color: snow;
+  border: solid 2px black;
+  box-shadow: 2px 3px 0px 0px black;
+  padding: 5px;
+  width: 100px;
+  align-self: center;
+}
