@@ -45,8 +45,8 @@ function App() {
   return (
     <div className="App mt-5">
       <h1>Pokémon</h1>
-      {/* <button onClick={catchPokemon} className="m-3 btn btn-danger btn-lg">Catch 'Em All!</button> without axios*/}
-      <button onClick={axiosCatchPokemon} className="m-3 btn btn-danger btn-lg">Catch 'Em All!</button>
+      {/* <button onClick={catchPokemon} >Catch 'Em All!</button> without axios*/}
+      <button onClick={axiosCatchPokemon} >Catch 'Em All!</button>
       <div>
         {/* {JSON.stringify(pokemon)} */}
         {pokemon.map((pkmn, index) => {
