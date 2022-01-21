@@ -1,12 +1,12 @@
 import './App.css';
-import React, { Switch, Route } from 'react-router-dom';
+import React, { Switch, Route, BrowserRouter } from 'react-router-dom';
 import Home from './components/Home';
 import Color from './components/Color';
 import Input from './components/Input';
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <Switch>
         
         <Route exact path="/home">
@@ -23,7 +23,7 @@ function App() {
 
       </Switch>      
 
-    </div>
+    </BrowserRouter>
   );
 }
 
