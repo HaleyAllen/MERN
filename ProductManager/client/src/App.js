@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Main from './views/Main';
 import Detail from './views/Detail';
 import Update from './views/Update';
@@ -7,15 +7,17 @@ import Update from './views/Update';
 function App() {
   return (
     <BrowserRouter>
-        <Route path="/products/">
+      <Switch>
+        <Route exact path="/products/">
           <Main />
         </Route>
-        <Route path="products/:id">
+        <Route exact path="products/:id">
           <Detail />
         </Route>
-        <Route path="/products/:id/edit">
+        <Route exact path="/products/:id/edit">
           <Update />
         </Route>
+      </Switch>
     </BrowserRouter>
   );
 }

@@ -17,7 +17,7 @@ const Update = (props) => {
             })
     }, []);
     
-    const updatePerson = e => {
+    const updateProduct = e => {
         e.preventDefault();
         axios.put('http://localhost:8000/api/people/' + id, {
             title,
@@ -29,9 +29,9 @@ const Update = (props) => {
     }
     
     return (
-        <div>
-            <h1>Update a Person</h1>
-            <form onSubmit={updatePerson}>
+        <div className='container mt-5'>
+            <h1 className='text-center'>Update a Product</h1>
+            <form onSubmit={updateProduct} className='text-center'>
                 <p>
                     <label>Product</label><br />
                     <input type="text" 
